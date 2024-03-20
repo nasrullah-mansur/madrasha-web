@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap");
+body {
+  font-family: "Noto Serif Bengali", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.section-padding {
+  padding-top: 80px;
+}
+
+.section-margin {
+  margin-top: 80px;
+}
+
+.section-padding-y {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: #0680b8;
+}
+
+.logo {
+  width: 110px;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.footer {
+  background-color: #0680b8;
+  padding: 30px 0;
+}
+.footer p,
+.footer strong {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+.footer ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.footer ul li {
+  padding: 0 10px;
+}
+.footer ul li a {
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer ul li a:hover {
+  color: #ffde00;
+}
+
+.banner {
+  position: relative;
+  height: calc(100vh - 115px);
+}
+
+.banner .banner-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.banner .banner-title h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 76px;
+}
+@media (max-width: 767.98px) {
+  .banner .banner-title h1 {
+    font-size: 46px;
+  }
+}
+
+.banner .banner-title p,
+.banner .banner-title h4 {
+  color: #fff;
+}
+
+.banner .banner-slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.banner .banner-slider .slider-item {
+  width: 100%;
+  height: calc(100vh - 115px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.classes .class-item {
+  margin-bottom: 30px;
+  background-color: #0680b8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.classes .class-item img {
+  width: 100%;
+}
+.classes .class-item .text {
+  text-align: center;
+  padding: 20px 0 30px;
+}
+.classes .class-item .text h3 {
+  font-size: 32px;
+  color: #fff;
+}
+.classes .class-item .text a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  background-color: #ffde00;
+  border-radius: 5px;
+  color: #0680b8;
+  transition: all 0.3s;
+}
+.classes .class-item .text a:hover {
+  background-color: #fff;
+}
+
+.notice {
+  background-color: #ffde00;
+}
+.notice h2,
+.notice p {
+  color: #000;
+  margin: 0;
+}
+.notice h2 {
+  margin-bottom: 20px;
+}
+
+.glance .glance-list ul {
+  padding: 0;
+  list-style: none;
+}
+.glance .glance-list ul li {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.glance .glance-list ul li span {
+  display: inline-block;
+}
+.glance .glance-list ul li span:first-child {
+  font-weight: 700;
+}
+
+.page-banner {
+  position: relative;
+  height: 250px;
+}
+.page-banner .banner-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.page-banner .banner-title h1 {
+  font-size: 46px;
+  color: #fff;
+  font-weight: 700;
+}
+.page-banner .banner-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.page-banner .image-item {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact .google-map {
+  width: 100% !important;
+  height: 220px !important;
+}
+.contact .form {
+  background-color: #ffde00;
+  padding: 30px;
+  border-radius: 15px;
+}
+.contact .form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .form form input,
+.contact .form form textarea,
+.contact .form form small {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  border: 0;
+}
+.contact .form form input {
+  padding: 5px 15px;
+  color: #000;
+  border-radius: 5px;
+  height: 50px;
+}
+.contact .form form textarea {
+  height: 160px;
+  padding-top: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+.contact .form form button {
+  margin-top: 15px;
+  height: 50px;
+  width: 220px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.contact .form form button:hover {
+  background-color: #0680b8;
+  color: #fff;
+}
+.contact .form form small {
+  margin-top: 0;
+}
+
+.gallery-page ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.gallery-page ul li {
+  padding: 6px 25px;
+  border: 1px solid #ddd;
+  margin: 0 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gallery-page ul li.active {
+  border-color: transparent;
+  background-color: #ffde00;
+}
+.gallery-page .gallery-content {
+  margin-top: 50px;
+}
+.gallery-page .gallery-content .gallery-item {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.gallery-page .gallery-content .gallery-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.gallery-page .gallery-content .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.gallery-page .gallery-content .overlay a {
+  text-decoration: none;
+  color: #000;
+  background-color: #ffde00;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.gallery-page .gallery-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-details .sidebar a {
+  text-decoration: none;
+  color: #0680b8;
+  transition: all 0.3s;
+}
+.course-details .sidebar a:hover {
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

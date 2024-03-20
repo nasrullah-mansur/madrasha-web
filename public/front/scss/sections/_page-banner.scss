@@ -1,0 +1,42 @@
+.page-banner {
+    position: relative;
+    height: 250px;
+
+    .banner-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+
+        h1 {
+            font-size: 46px;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .banner-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .image-item {
+        width: 100%;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

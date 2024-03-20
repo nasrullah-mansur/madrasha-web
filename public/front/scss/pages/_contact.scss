@@ -1,0 +1,61 @@
+.contact {
+
+    .google-map {
+        width: 100% !important;
+        height: 220px !important;
+    }
+
+
+    .form {
+        background-color: $secondary-color;
+        padding: 30px;
+        border-radius: 15px;
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+
+            input,
+            textarea,
+            small {
+                display: block;
+                width: 100%;
+                margin-top: 15px;
+                border: 0;
+            }
+
+            input {
+                padding: 5px 15px;
+                color: #000;
+                border-radius: 5px;
+                height: 50px;
+            }
+
+            textarea {
+                height: 160px;
+                padding-top: 15px;
+                padding-left: 15px;
+                border-radius: 5px;
+            }
+
+            button {
+                margin-top: 15px;
+                height: 50px;
+                width: 220px;
+                border: 0;
+                border-radius: 5px;
+                background-color: #fff;
+                transition: all .3s;
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+            }
+
+            small {
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /login
+Disallow: /verify-email
+Disallow: /forgot-password
+Disallow: /register
+Disallow: /blogs/tag/
+Disallow: /faq
+Disallow: /tube-block
+Disallow: /low-sperm-count
+Disallow: /cryopreservation
+Disallow: /endometriosis
+Disallow: /?MD
+Disallow: /?MA
+Disallow: /?NA
+Disallow: /?ND
+Sitemap: https://www.drgaousulazam.com/sitemap.xml
