@@ -37,7 +37,7 @@ class CustomPageController extends Controller
 
         $page->save();
 
-        return redirect()->route('back.custom_page.index')->with('success', 'Custom Page Added Successfully');
+        return redirect()->route('custom.page.index')->with('success', 'Custom Page Added Successfully');
     }
 
     function edit($id) {

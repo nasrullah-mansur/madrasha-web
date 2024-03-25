@@ -6,19 +6,20 @@ use App\Models\Glance;
 use App\Models\Notice;
 use App\Models\Slider;
 use App\Models\Division;
+use App\Models\CustomPage;
 use App\Models\ImageGallery;
 use Illuminate\Http\Request;
 use App\Models\ContactSection;
 use App\Http\Controllers\Controller;
-use App\Models\CustomPage;
 use App\Models\ImageGalleryCategory;
 
 class FrontController extends Controller
 {
     public function index()
     {
+
         $sliders = Slider::orderBy('created_at', 'DESC')->get();
-        $divisions = Division::orderBy('created_at', 'DESC')->get();
+        $divisions = Division::all();
         $notice = Notice::first();
         $glance = Glance::first();
 

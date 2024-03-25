@@ -20,6 +20,7 @@
     <div class="container section-padding course-details">
         <div class="row">
             <div class="col-lg-8">
+                <img class="img-fluid mb-3" src="{{ asset($division->image) }}" alt="{{ $division->title }}">
                 <div class="details">{!! $division->content !!}</div>
             </div>
             <div class="col-lg-4">

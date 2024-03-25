@@ -25,7 +25,7 @@
                 <div class="col-lg-6 mb-4">
                     <div class="address">
                         <div class="address-text">
-                            {!! $contact_section->content !!}
+                            {!! $contact_section ? $contact_section->content : '' !!}
                         </div>
 
                     </div>
