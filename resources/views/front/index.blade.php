@@ -27,7 +27,7 @@
             </div>
             <div class="row justify-content-center">
                 @foreach ($divisions as $division)
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="class-item">
                         <div class="image">
                             <img src="{{ asset($division->image) }}" alt="{{$division->alt}}">
@@ -72,9 +72,11 @@
                 <h2>এক নজরে আমাদের মাদরাসা </h2>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="{{ $glance->list == "null" ? "col-lg-12" : "col-lg-6" }} ">
                     <div class="glance-text border p-3">{!! $glance->content !!}</div>
                 </div>
+
+                @if ($glance->list != "null")
                 <div class="col-lg-6">
                     <div class="glance-list border p-3">
                         <ul>
@@ -87,6 +89,8 @@
                         </ul>
                     </div>
                 </div>
+                @endif
+
             </div>
         </div>
     </section>

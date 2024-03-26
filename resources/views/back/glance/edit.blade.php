@@ -38,7 +38,8 @@
               <div data-repeater-list="list">
 
                 @if ($glance)
-                @foreach (json_decode($glance->list) as $glans)
+                @if ($glance->list != "null")
+                  @foreach (json_decode($glance->list) as $glans)
                 <div class="input-group mb-1 border-bottom pb-2" data-repeater-item>
                     <input value="{{ $glans->list_name }}" type="text" placeholder="List Name" class="form-control mr-2" name="list_name" />
                     <input value="{{ $glans->count }}" type="text" placeholder="Count" class="form-control" name="count" />
@@ -49,6 +50,7 @@
                     </div>
                 </div>
                 @endforeach
+                @endif
                 @endif
 
                 <div class="input-group mb-1 border-bottom pb-2" data-repeater-item>

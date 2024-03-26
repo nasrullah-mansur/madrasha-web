@@ -10,6 +10,7 @@ class GlanceController extends Controller
     function edit() {
         $glance = Glance::first();
 
+        // return $glance;
         return view('back.glance.edit', compact('glance'));
     }
 
